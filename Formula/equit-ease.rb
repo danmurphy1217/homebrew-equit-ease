@@ -143,7 +143,7 @@ class EquitEase < Formula
   end
 
   def install
-    virtualenv_install_with_resources :using => "python@3.7"
+    virtualenv_install_with_resources :using => "python@3"
   end
  
   test do
