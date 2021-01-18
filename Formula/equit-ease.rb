@@ -7,6 +7,8 @@ class EquitEase < Formula
   sha256 "48a6421c79584c46054dca72317a526b13f44ecf7bc9cfdcd7b97d1c5e03f3c0"
   license "MIT"
 
+  depends_on "python@3.9" 
+
   resource "appdirs" do
     url "https://files.pythonhosted.org/packages/d7/d8/05696357e0311f5b5c316d7b95f46c669dd9c15aaeecbb48c7d0aeb88c40/appdirs-1.4.4.tar.gz"
     sha256 "7d5d0167b2b1ba821647616af46a749d1c653740dd0d2415100fe26e27afdf41"
@@ -143,7 +145,7 @@ class EquitEase < Formula
   end
 
   def install
-    virtualenv_install_with_resources :using => "python@3"
+    virtualenv_install_with_resources 
   end
  
   test do
