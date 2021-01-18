@@ -17,16 +17,6 @@ class EquitEase < Formula
     sha256 "832aa3cde19744e49938b91fea06d69ecb9e649c93ba974535d08ad92164f700"
   end
 
-  resource "autopep8" do
-    url "https://files.pythonhosted.org/packages/94/37/19bc53fd63fc1caaa15ddb695e32a5d6f6463b3de6b0922ba2a3cbb798c8/autopep8-1.5.4.tar.gz"
-    sha256 "d21d3901cb0da6ebd1e83fc9b0dfbde8b46afc2ede4fe32fbda0c7c6118ca094"
-  end
-
-  resource "black" do
-    url "https://files.pythonhosted.org/packages/dc/7b/5a6bbe89de849f28d7c109f5ea87b65afa5124ad615f3419e71beb29dc96/black-20.8b1.tar.gz"
-    sha256 "1c02557aa099101b9d21496f8a914e9ed2222ef70336404eeeac8edba836fbea"
-  end
-
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/06/a9/cd1fd8ee13f73a4d4f491ee219deeeae20afefa914dfb4c130cfc9dc397a/certifi-2020.12.5.tar.gz"
     sha256 "1a4995114262bffbc2413b159f2a1a480c969de6e6eb13ee966d470af86af59c"
@@ -155,7 +145,8 @@ class EquitEase < Formula
   def install
     virtualenv_install_with_resources :using => "python@3.7"
   end
-    test do
+ 
+  test do
     system bin/"equity", "--help"
   end
 end
