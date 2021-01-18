@@ -1,2 +1,2 @@
 # homebrew-equit-ease
-Fromula for downloading equit-ease with homebrew
+Formula for downloading equit-ease with homebrew
