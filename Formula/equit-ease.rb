@@ -3,8 +3,8 @@ class EquitEase < Formula
 
   desc "The easiest way to retrieve equity data from the command line. Search Stocks, Options, Cryptocurrencies and other digital assets, and more in a manner of seconds."
   homepage "https://pypi.org/project/EquitEase/"
-  url "https://files.pythonhosted.org/packages/b8/24/12ae3d7de1af6d9695652ef4918a3d64518a6f562152563d7a1e2861ff65/EquitEase-0.0.1.tar.gz"
-  sha256 "0c35e874047f847c2e4fe285854c3c7b4ac9e301b376d04180019b73906f082f"
+  url "https://files.pythonhosted.org/packages/87/32/9ec18343133edb2985985c293b659de9faed5b1ad83e722ba109a4f3081f/EquitEase-0.0.2.tar.gz"
+  sha256 "7f6d4f53eeb271cb6bf90319cf68ecfeb5bb34d8d808b2b17034de5b62588ec7"
   license "MIT"
 
   resource "appdirs" do
