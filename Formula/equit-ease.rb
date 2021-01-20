@@ -3,9 +3,11 @@ class EquitEase < Formula
 
   desc "The easiest way to retrieve equity data from the command line. Search Stocks, Options, Cryptocurrencies and other digital assets, and more in a manner of seconds."
   homepage "https://pypi.org/project/EquitEase/"
-  url "https://files.pythonhosted.org/packages/b8/24/12ae3d7de1af6d9695652ef4918a3d64518a6f562152563d7a1e2861ff65/EquitEase-0.0.1.tar.gz"
-  sha256 "0c35e874047f847c2e4fe285854c3c7b4ac9e301b376d04180019b73906f082f"
+  url "https://files.pythonhosted.org/packages/c6/5b/cd0de298b3e0f2e121a38e66b3c42c5b29a94cada7b42b45d6bc70e41f29/EquitEase-0.0.4.tar.gz"
+  sha256 "2866cbf1b0cd1da8accae4820d731a70e165afe610446450d447075e76fbd6b7"
   license "MIT"
+
+  depends_on "python@3.9"
 
   resource "appdirs" do
     url "https://files.pythonhosted.org/packages/d7/d8/05696357e0311f5b5c316d7b95f46c669dd9c15aaeecbb48c7d0aeb88c40/appdirs-1.4.4.tar.gz"
@@ -153,9 +155,10 @@ class EquitEase < Formula
   end
 
   def install
-    virtualenv_install_with_resources :using => "python@3.9"
+    virtualenv_install_with_resources 
   end
-    test do
+ 
+  test do
     system bin/"equity", "--help"
   end
 end
